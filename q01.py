@@ -12,4 +12,4 @@ df = pd.read_csv(open('/vagrant/GitHub/lab-programacion-pandas-jlmejiav/tbl0.tsv
 ##
 letras=sorted(set(df._c1))
 for w in letras:
-    print(w,',',df[df['_c1'] == w].count()['_c1'])
+    print(w,df[df['_c1'] == w].count()['_c1'])
